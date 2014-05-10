@@ -169,14 +169,26 @@
 				</section> -->
 				<script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
 				<script>
+				$(document).ready(function($) {
+				// // init controller
+				// var controller = new ScrollMagic();
+
+				// // build tween
+				// var tween = TweenMax.from("#animate", 0.5, {autoAlpha: 0, scale: 0.7});
+
+				// // build scene
+				// var scene = new ScrollScene({triggerElement: "a#top", duration: 200, triggerHook: "onLeave"})
+				// 				.setTween(tween)
+				// 				.addTo(controller);
+
 				// change behaviour of anchor links to scroll instead of jump
 				$(document).on("click", "a[href^=#]", function (e) {
 					var
-					id = $(this).attr("href"),
-					$elem = $(id);
+						id = $(this).attr("href"),
+						$elem = $(id);
 					if ($elem.length > 0) {
 						e.preventDefault();
-						TweenMax.to(window, 0.5, {scrollTo: {y: $elem.offset().left}});
+						TweenMax.to(window, 0.5, {scrollTo: {x: $elem.offset().left - 300}});
 						if (window.history && window.history.pushState) {
 							// if supported by the browser we can even update the URL.
 							history.pushState("", document.title, id);
