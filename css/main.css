@@ -1,7 +1,79 @@
-body {
-  background: url('../img/8.jpg');
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position: top left; 
-  background-size: cover;
+.guest {
+	font-size: 20px;
+	text-align: center;
+}
+.img1 {
+	background: url('../img/1.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img2 {
+	background: url('../img/2.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img3 {
+	background: url('../img/3.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img4 {
+	background: url('../img/4.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img5 {
+	background: url('../img/5.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img6 {
+	background: url('../img/6.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img7 {
+	background: url('../img/7.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img8 {
+	background: url('../img/8.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img9 {
+	background: url('../img/9.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img10 {
+	background: url('../img/10.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img11 {
+	background: url('../img/11.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img12 {
+	background: url('../img/12.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img13 {
+	background: url('../img/13.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img14 {
+	background: url('../img/14.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
+}
+.img15 {
+	background: url('../img/15.jpg');
+	background-repeat:repeat;
+	background-attachment:fixed;
 }
