@@ -168,6 +168,7 @@
 					</script>
 				</section> -->
 				<script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
+				<script type="text/javascript" src="js/EasePack.min.js"></script>
 				<script>
 				$(document).ready(function($) {
 				// // init controller
@@ -188,11 +189,10 @@
 						$elem = $(id);
 					if ($elem.length > 0) {
 						e.preventDefault();
-						TweenMax.to(window, 0.5, {scrollTo: {x: $elem.offset().left - 300}});
-						if (window.history && window.history.pushState) {
-							// if supported by the browser we can even update the URL.
-							history.pushState("", document.title, id);
-						}
+						windowWidth = $(window).width();
+						elemWidth = $(id).width();
+						div = (windowWidth - elemWidth) / 2.0;
+						TweenMax.to(window, 1.2, {scrollTo: {x: $elem.offset().left - div, autoKill:false}, ease:Power2.easeInOut});
 					}
 				});
 
