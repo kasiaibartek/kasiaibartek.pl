@@ -62,8 +62,8 @@ section#titlechart #front {
 	position: absolute;
 	width: 45%;
 	border-radius:100px;
-	color: #FFFFFf;
-	background-color: #000000;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.5);
 }
 
 section#titlechart #description {
