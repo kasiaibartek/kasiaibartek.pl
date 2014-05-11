@@ -1,3 +1,15 @@
+a:link {
+	color:#ffffff;
+}
+a:visited {
+	color:#ffffff;
+}
+a:hover {
+	color:#ffffff;
+}
+a:active {
+	color:#ffffff;
+}
 .guest {
 	font-size: 20px;
 	text-align: center;
