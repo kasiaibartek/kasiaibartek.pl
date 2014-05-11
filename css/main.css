@@ -10,6 +10,20 @@ a:hover {
 a:active {
 	color:#ffffff;
 }
+.turkus_color {
+	color:#4cb1b3;
+}
+.turkus_background {
+	background-color:#4cb1b3;
+}
+.logotyp {
+	max-width: 18%;
+	max-height: 18%;
+	position: absolute;
+	top: 75%;
+	left: 5%;
+	z-index: 0;
+}
 .guest {
 	font-size: 20px;
 	text-align: center;
