@@ -162,7 +162,31 @@ section.demo.doublewidth, .spacer.doublewidth {
 	min-height: 900px;
 }
 .spacer.s10 {
-	min-height: 1000px;
+	min-height: 10%;
+}
+.spacer.s20 {
+	min-height: 20%;
+}
+.spacer.s30 {
+	min-height: 30%;
+}
+.spacer.s40 {
+	min-height: 40%;
+}
+.spacer.s50 {
+	min-height: 50%;
+}
+.spacer.s60 {
+	min-height: 60%;
+}
+.spacer.s70 {
+	min-height: 70%;
+}
+.spacer.s80 {
+	min-height: 80%;
+}
+.spacer.s90 {
+	min-height: 90%;
 }
 .spacer.s_viewport {
 	min-height: 100%;
