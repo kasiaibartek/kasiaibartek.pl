@@ -63,7 +63,6 @@ section#titlechart #front {
 	width: 45%;
 	border-radius:100px;
 	color: #FFFFFF;
-	background-color: rgba(0,0,0,0.5);
 }
 
 section#titlechart #description {
@@ -193,7 +192,7 @@ section.demo.doublewidth, .spacer.doublewidth {
 }
 .horizontal .spacer {
 	margin-bottom: 0;
-	min-height: initial;
+	min-height: 100%;
 	min-width: 100px;
 	height: 100%;
 	display: inline-block;
