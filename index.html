@@ -139,12 +139,14 @@
 
         var controller = new ScrollMagic({vertical: false});
 
+            var slubw = $(window).width();
+
             var tween = TweenMax.fromTo("#rogow1", 1.0, {alpha: 1.0}, {alpha: 0.0});        
-            var scene = new ScrollScene({triggerElement: "#rogow_before", duration: 200, offset: 450})
+            var scene = new ScrollScene({triggerElement: "#rogow_before", duration: 200, offset: slubw / 3.0 + 20})
             .setTween(tween)
             .addTo(controller);
             var tween = TweenMax.fromTo("#rogow2", 1.0, {alpha: 0.0}, {alpha: 1.0});        
-            var scene = new ScrollScene({triggerElement: "#rogow_before", duration: 200, offset: 450})
+            var scene = new ScrollScene({triggerElement: "#rogow_before", duration: 200, offset: slubw / 3.0 + 20})
             .setTween(tween)
             .addTo(controller);
 
