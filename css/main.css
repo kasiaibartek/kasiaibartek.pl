@@ -50,18 +50,18 @@ a:active {
 }
 #left_arrow {
 	position: fixed;
-	top: 90%;
-	left: 33%;
-	font-size: 60px;
+	bottom: 0%;
+	left: 35%;
+	font-size: 40px;
 	background-color: transparent;	
 	color: rgba(0, 0, 0, 0.6);
 	z-index: 2;
 }
 #right_arrow {
 	position: fixed;
-	top: 90%;
+	bottom: 0%;
 	left: 62%;
-	font-size: 60px;
+	font-size: 40px;
 	background-color: transparent;	
 	color: rgba(0, 0, 0, 0.6);
 	z-index: 2;
