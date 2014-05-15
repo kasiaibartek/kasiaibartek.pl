@@ -184,8 +184,8 @@
                 var div = $('body');
                 interval_left = setInterval(function(){
                   var pos = div.scrollLeft();
-                  TweenLite.to(div, 0.1, {scrollTo: {x: pos - 10, autoKill:false}, ease:Linear.easeNone});  
-                }, 100);
+                  TweenLite.to(div, 0.01, {scrollTo: {x: pos - 5, autoKill:false}, ease:Linear.easeNone});  
+                }, 10);
             }).on('mouseup', function() {
               clearInterval(interval_left);
             });
@@ -195,8 +195,8 @@
                 var div = $('body');
                 interval_right = setInterval(function(){
                   var pos = div.scrollLeft();
-                  TweenLite.to(div, 0.1, {scrollTo: {x: pos + 10, autoKill:false}, ease:Linear.easeNone});
-                }, 100);
+                  TweenLite.to(div, 0.01, {scrollTo: {x: pos + 5, autoKill:false}, ease:Linear.easeNone});
+                }, 10);
             }).on('mouseup', function() {
               clearInterval(interval_right);
             });
