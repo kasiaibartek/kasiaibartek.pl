@@ -154,52 +154,72 @@
             .addTo(controller);
 
             $(document).on("click", "#left_arrow", function (e) {
-              var left = $(document).scrollLeft() - 50;
-                    var slub_left = 0;
-                    var rogow_left = $('#rogow').offset().left + ($('#rogow').width() / 2.0) - ($(window).width() / 2.0);
-                    var wesele_left = $('#wesele').offset().left + ($('#wesele').width() / 2.0) - ($(window).width() / 2.0);
-                    var przyjecie_left = $('#przyjecie').offset().left + ($('#przyjecie').width() / 2.0) - ($(window).width() / 2.0);
-                    var goscie_left = $('#goscie').offset().left + ($('#goscie').width() / 2.0) - ($(window).width() / 2.0);
+              // var left = $(document).scrollLeft() - 50;
+              //       var slub_left = 0;
+              //       var rogow_left = $('#rogow').offset().left + ($('#rogow').width() / 2.0) - ($(window).width() / 2.0);
+              //       var wesele_left = $('#wesele').offset().left + ($('#wesele').width() / 2.0) - ($(window).width() / 2.0);
+              //       var przyjecie_left = $('#przyjecie').offset().left + ($('#przyjecie').width() / 2.0) - ($(window).width() / 2.0);
+              //       var goscie_left = $('#goscie').offset().left + ($('#goscie').width() / 2.0) - ($(window).width() / 2.0);
                     
-                    if (left > -100 && left <= rogow_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: slub_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left > rogow_left && left <= wesele_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: rogow_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left > wesele_left && left <= przyjecie_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: wesele_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left > przyjecie_left && left <= goscie_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: przyjecie_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left > goscie_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: goscie_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
+              //       if (left > -100 && left <= rogow_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: slub_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left > rogow_left && left <= wesele_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: rogow_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left > wesele_left && left <= przyjecie_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: wesele_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left > przyjecie_left && left <= goscie_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: przyjecie_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left > goscie_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: goscie_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
               
             });
 
-            $(document).on("click", "#right_arrow", function (e) {
-              var left = $(document).scrollLeft() + 50;
-                    var slub_left = 0;
-                    var rogow_left = $('#rogow').offset().left + ($('#rogow').width() / 2.0) - ($(window).width() / 2.0);
-                    var wesele_left = $('#wesele').offset().left + ($('#wesele').width() / 2.0) - ($(window).width() / 2.0);
-                    var przyjecie_left = $('#przyjecie').offset().left + ($('#przyjecie').width() / 2.0) - ($(window).width() / 2.0);
-                    var goscie_left = $('#goscie').offset().left + ($('#goscie').width() / 2.0) - ($(window).width() / 2.0);
-                    
-                    if (left >= -100 && left < rogow_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: rogow_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left >= rogow_left && left < wesele_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: wesele_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left >= wesele_left && left < przyjecie_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: przyjecie_left, autoKill:false}, ease:Power2.easeInOut});
-                    } 
-                    if (left >= przyjecie_left && left < goscie_left) {
-                      TweenLite.to(window, 1.2, {scrollTo: {x: goscie_left, autoKill:false}, ease:Power2.easeInOut});
-                    }  
+            var interval_left;
+            $(document).on("mousedown", "#left_arrow", function (e) {
+                var div = $('body');
+                interval_left = setInterval(function(){
+                  var pos = div.scrollLeft();
+                  TweenLite.to(div, 0.1, {scrollTo: {x: pos - 10, autoKill:false}, ease:Linear.easeNone});  
+                }, 100);
+            }).on('mouseup', function() {
+              clearInterval(interval_left);
             });
+
+            var interval_right;
+            $(document).on("mousedown", "#right_arrow", function (e) {
+                var div = $('body');
+                interval_right = setInterval(function(){
+                  var pos = div.scrollLeft();
+                  TweenLite.to(div, 0.1, {scrollTo: {x: pos + 10, autoKill:false}, ease:Linear.easeNone});
+                }, 100);
+            }).on('mouseup', function() {
+              clearInterval(interval_right);
+            });
+              // var left = $(document).scrollLeft() + 50;
+              //       var slub_left = 0;
+              //       var rogow_left = $('#rogow').offset().left + ($('#rogow').width() / 2.0) - ($(window).width() / 2.0);
+              //       var wesele_left = $('#wesele').offset().left + ($('#wesele').width() / 2.0) - ($(window).width() / 2.0);
+              //       var przyjecie_left = $('#przyjecie').offset().left + ($('#przyjecie').width() / 2.0) - ($(window).width() / 2.0);
+              //       var goscie_left = $('#goscie').offset().left + ($('#goscie').width() / 2.0) - ($(window).width() / 2.0);
+                    
+              //       if (left >= -100 && left < rogow_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: rogow_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left >= rogow_left && left < wesele_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: wesele_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left >= wesele_left && left < przyjecie_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: przyjecie_left, autoKill:false}, ease:Power2.easeInOut});
+              //       } 
+              //       if (left >= przyjecie_left && left < goscie_left) {
+              //         TweenLite.to(window, 1.2, {scrollTo: {x: goscie_left, autoKill:false}, ease:Power2.easeInOut});
+              //       }  
+            // });
 
             $(document).on("click", "input, a [href^=#]", function (e) {
              var id = $(this).attr("href"),
