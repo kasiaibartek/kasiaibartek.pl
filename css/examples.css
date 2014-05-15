@@ -49,7 +49,7 @@ section#titlechart {
 	text-align: center;
 	position: relative;
 	height: 100%;
-	min-height: 500px;
+	min-height: 650px;
 }
 .horizontal section {
 	display: inline-block;
@@ -128,7 +128,7 @@ section.demo.doublewidth, .spacer.doublewidth {
 */
 .spacer {
 	text-align: center;
-	min-height: 100px;
+	min-height: 650px;
 }
 .spacer.s0 {
 	min-height: 1px;
@@ -192,7 +192,7 @@ section.demo.doublewidth, .spacer.doublewidth {
 }
 .horizontal .spacer {
 	margin-bottom: 0;
-	min-height: 100%;
+	min-height: 650px;
 	min-width: 100px;
 	height: 100%;
 	display: inline-block;
