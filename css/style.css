@@ -2,7 +2,7 @@
 	General styles
 */
 body {
-	font-family: "Source Sans Pro", Arial, sans-serif;
+	font-family:  "0326EU", "Source Sans Pro", Arial, sans-serif;
 	background-color: #c7e1ff;
 	font-size: 13px;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -12,15 +12,15 @@ body, html {
 }
 
 h1, h2, h3, h4 {
-	font-family: "Josefin Slab", serif;
+	font-family:  "0326EU", "Josefin Slab", serif;
 }
 h1 {
-	font-style: italic;
+	/*font-style: italic;*/
 	font-weight: bold;
-	font-size: 40px;
+	font-size: 45px;
 }
 h2 {
-	font-size: 20px;
+	font-size: 28px;
 }
 a, a:visited {
 	text-decoration: none;

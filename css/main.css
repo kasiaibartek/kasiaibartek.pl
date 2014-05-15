@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "0326EU";
+    src: url(../resources/0326EU.ttf) format("truetype");
+}
 a:link {
 	color:#4cb1b3;
 }
