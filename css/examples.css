@@ -66,7 +66,7 @@ section#titlechart #front {
 }
 
 section#titlechart #description {
-	top: 25%;
+	top: 20%;
 	left: 50%;
 	position: absolute;
 	width: 600px;
@@ -94,11 +94,11 @@ section#titlechart #description ol {
 	list-style-position: outside;
 }
 #example-wrapper section#titlechart #description:after {
-	content: "↧";
-	font-size: 40px;
+	/*content: "↧";*/
+	/*font-size: 40px;*/
 }
 #example-wrapper.horizontal section#titlechart #description:after {
-	content: "↦";
+	/*content: "↦";*/
 }
 
 
