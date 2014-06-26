@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"LEFT",
+				"left_arrow"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
 				"fo",
 				"font-weight"
 			],
@@ -180,10 +192,6 @@
 				"gsub"
 			],
 			[
-				"co",
-				"content"
-			],
-			[
 				"en",
 				"enum"
 			],
@@ -279,6 +287,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 4110,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 788,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/examples.css",
+			"settings":
+			{
+				"buffer_size": 13611,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -440,9 +472,11 @@
 	},
 	"file_history":
 	[
+		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/index.html",
+		"/Volumes/Audacity 2.0.5/Install.txt",
+		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/develop/index.html",
 		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/css/main.css",
 		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/vertical/index.html",
-		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/index.html",
 		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/css/cover.css",
 		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/js/main.js",
 		"/Users/krzysztofsiejkowski/Projects/kasiaibartek.pl/js/jquery.stellar.min.js",
@@ -565,9 +599,7 @@
 		"/Users/krzysztofsiejkowski/Downloads/Mobius/tools/exampleMobiusClient/src/main/java/pl/allegro/mobius/playProxyTester/TokenResponse.java",
 		"/Users/krzysztofsiejkowski/AllegroProjects/MASLoginProto/Podfile",
 		"/Users/krzysztofsiejkowski/Projects/wjug/app/app.coffee",
-		"/Users/krzysztofsiejkowski/Projects/wjug/app/partials/by-you.jade",
-		"/Users/krzysztofsiejkowski/Projects/wjug/package.json",
-		"/Users/krzysztofsiejkowski/Projects/RestKit-0.20.3/Examples/RKTwitterCoreData/restkit.json"
+		"/Users/krzysztofsiejkowski/Projects/wjug/app/partials/by-you.jade"
 	],
 	"find":
 	{
@@ -586,6 +618,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"b",
+			"400px",
+			"50",
+			");\n",
 			"TweenLite",
 			"a:",
 			"color",
@@ -672,8 +708,99 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4110,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/examples.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13611,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1206,
+								1206
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 444.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
