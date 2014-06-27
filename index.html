@@ -43,9 +43,11 @@
        <div class="scrollContent">
         <input type="radio" name="radio-btn" id="img-1" href="#slub" checked/>
         <input type="radio" name="radio-btn" id="img-2" href="#rogow"/>
-        <input type="radio" name="radio-btn" id="img-3" href="#wesele"/>
-        <input type="radio" name="radio-btn" id="img-4" href="#przyjecie"/>
-        <input type="radio" name="radio-btn" id="img-5" href="#goscie"/>
+        <input type="radio" name="radio-btn" id="img-3" href="#rogow3"/>
+        <input type="radio" name="radio-btn" id="img-4" href="#wesele"/>
+        <input type="radio" name="radio-btn" id="img-5" href="#wesele2"/>
+        <input type="radio" name="radio-btn" id="img-6" href="#przyjecie"/>
+        <!-- <input type="radio" name="radio-btn" id="img-7" href="#goscie"/> -->
         <a id="left_arrow">⇦</a>
         <span id="right_arrow">⇨</span>
         <li class="nav-dots">
@@ -54,6 +56,8 @@
           <label for="img-3" class="nav-dot" id="img-dot-3"></label>
           <label for="img-4" class="nav-dot" id="img-dot-4"></label>
           <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+          <!-- <label for="img-7" class="nav-dot" id="img-dot-7"></label> -->
         </li>
          <!-- <div class="nav"><a href="#slub">ślub</a> | <a href="#rogow">rogów</a> | <a href="#wesele">wesele</a> | <a href="#przyjecie">przyjęcie</a> | <a href="#goscie">goście</a></div> -->
         <section id="titlechart" class="img8 spacer s_viewport">
@@ -67,19 +71,19 @@
       <section id="titlechart" class="white spacer s70">
         <img class="logotyp img8" src="img/logotyp_inverted.png"/>
         <div id="rogow1">
-          <div id="description">
+          <div id="description" class="scrollContainer" style="left: 55%; height: 85%; width: 70%; border: 0px;">
             <h1 id="rogow">Ślub</h1>
             <h2 class="turkus_color">Ceremonia zaślubin odbędzie się 28 czerwca 2014 roku<br/>o godzinie 13.00 na terenie Arboretum SGGW w Rogowie.</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2466.1377829174844!2d19.902900572769177!3d51.82191346790818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sarboretum+rog%C3%B3w!5e0!3m2!1spl!2spl!4v1403765244622" width="600" height="200" frameborder="0" style="border:0"></iframe>
-            <h4>UWAGA! W przypadku złej pogody ceremonia odbędzie się<br/>w Urzędzie Gminy Rogów przy ulicy Żeromskiego 23.</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2466.336170326145!2d19.882444499999995!3d51.818289199999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bd6e349a3a6ab%3A0x372b6473f3064c28!2s%C5%BBeromskiego+23!5e0!3m2!1spl!2spl!4v1403763961300" width="400" height="100" frameborder="0" style="border:0"></iframe>
-            <h4>Informacja o miejscu uroczystości będzie dostępna pod numerami telefonów:<br/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2466.1377829174844!2d19.902900572769177!3d51.82191346790818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sarboretum+rog%C3%B3w!5e0!3m2!1spl!2spl!4v1403765244622" width="500" height="250" frameborder="0" style="border:0"></iframe>
+            <h3>UWAGA! W przypadku złej pogody ceremonia odbędzie się<br/>w Urzędzie Gminy Rogów przy ulicy Żeromskiego 23.</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2466.336170326145!2d19.882444499999995!3d51.818289199999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bd6e349a3a6ab%3A0x372b6473f3064c28!2s%C5%BBeromskiego+23!5e0!3m2!1spl!2spl!4v1403763961300" width="500" height="250" frameborder="0" style="border:0"></iframe>
+            <h3>Informacja o miejscu uroczystości będzie dostępna<br/>pod numerami telefonów:<br/>
             <ul>
               <li>Barbara Kędziora: <span class="turkus_color">609 461 425</span></li>
               <li>Anna Targowska: <span class="turkus_color">506 761 416</span></li>
               <li>Krzysztof Siejkowski: <span class="turkus_color">505 717 133</span></li>
             </ul>
-            </h4>
+            </h3>
           </div>
         </div>
       </section>
@@ -88,25 +92,25 @@
         <img class="logotyp img11" src="img/logotyp_inverted.png"/>
         <div id="rogow2">
           <div id="description" class="scrollContainer" style="left: 55%; height: 85%; width: 70%; border: 0px;">
-            <h3>Serdecznie prosimy o wcześniejsze przybycie (ok. 15 minut),
+            <h3 id="rogow3">Serdecznie prosimy o <span class="turkus_color">wcześniejsze przybycie</span> (ok. 15 minut),
             <br/>miejsce ceremonii jest oddalone od parkingu o kilka minut spacerem.</h3>
             <!-- <br/>Przed uroczystością zachęcamy do zwiedzenia Arboretum i Alpinarium. -->
-            <h3>W kasie przy wejściu należy okazać zaproszenie na ślub<br/>lub dyskretnie powołać się na Kasię i Bartka :)</h3>
+            <h3>W kasie przy wejściu należy okazać <span class="turkus_color">zaproszenie na ślub</span><br/>lub dyskretnie powołać się na Kasię i Bartka :)</h3>
             <h3>Po ceremonii zapraszamy na lampkę szampana i krótki spacer,<br/>w czasie którego
             z radością przyjmiemy życzenia od tych z Gości, <br/>którzy nie mogą wybrać się z nami na wycieczkę kolejką.</h3>
             <h3>Zamiast kwiatów doskonałym prezentem będzie dla nas<br/>książka, płyta lub butelka wytrawnego wina.</h3>
-            <h3>Następnie zapraszamy na przejazd Rogowską Koleją Wąskotorową
+            <h3>Następnie zapraszamy na przejazd <span class="turkus_color">Rogowską Koleją Wąskotorową</span>
             <br/>na trasie Rogów – Głuchów – Rogów.
-            <br/>Odjazd pociągu o godz. 14:00 ze stacji Rogów Towarowy,
+            <br/>Odjazd pociągu o godz. <span class="turkus_color">14:00</span> ze stacji <span class="turkus_color">Rogów Towarowy</span>,
             <br/>gdzie istnieje możliwość zaparkowania samochodów.</h3>
             <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2466.628321887892!2d19.881196703740805!3d51.81295166038251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRog%C3%B3w+Towarowy!5e0!3m2!1spl!2spl!4v1403766327060" width="400" height="200" frameborder="0" style="border:0"></iframe>
             <h3>Osobom nieznającym okolicy proponujemy przejazd w korowodzie
-            <br/>za autokarem. Wyjazd z parkingu przy Arboretum ok. godz. 13:45.</h3>
+            <br/>za autokarem. Wyjazd z <span class="turkus_color">parkingu przy Arboretum</span> ok.godz. <span class="turkus_color">13:45</span>.</h3>
             <h3>Podczas wycieczki mamy nadzieję znaleźć czas dla każdego z Gości<br/>
             na chwilę rozmowy i przyjęcie życzeń. Podróż umili drobny poczęstunek.</h3>
             <h3>Pożegnamy się na stacji Jeżów, gdzie wraz z rodziną udamy się
             <br/>na uroczysty obiad, życząc szczęśliwej podróży powrotnej do Rogowa.
-            <br/>Przyjazd planowany jest na godz. 16.10.</h3>
+            <br/>Przyjazd planowany jest na godz. <span class="turkus_color">16.10.</span></h3>
             <h3>Panna Młoda gorąco poleca wszystkim paniom płaskie buty :)</h3>
           </div>
         </div>
@@ -114,7 +118,7 @@
       <div class="spacer s_viewport img5"></div>
       <section id="titlechart" class="white spacer s70">
         <img class="logotyp img5" src="img/logotyp_inverted.png"/>
-        <div id="description">
+        <div id="description" style="left: 55%; height: 85%; width: 70%; border: 0px;">
           <h1 id="wesele">Przyjęcie weselne dla rodziny</h1>
           <h2 class="turkus_color">odbędzie się w Jeżowie przy ulicy Pisarskiego 7</h2>
           <br/>
@@ -127,26 +131,38 @@
       <section id="titlechart" class="white spacer s70">
         <img class="logotyp img2" src="img/logotyp_inverted.png"/>
         <div id="description" class="scrollContainer" style="left: 55%; height: 85%; width: 70%; border: 0px;">
-          <h2>Gościom weselnym proponujemy transport autokarem.</h2>
+          <h3 id="wesele2">Gościom weselnym proponujemy <span class="turkus_color">transport autokarem.</span></h3>
+          <h3>
+          <table style="width:300px">
+          <tr>
+          <td style="text-align: right">Przystanek <span class="turkus_color">Łódź, Legionów 76</span>&nbsp;</td>
+          <td> – odjazd <span class="turkus_color">10:50</span></td> 
+          </tr>
+          <tr>
+          <td style="text-align: right">Przystanek <span class="turkus_color">Koluszki, Głowackiego (Lewiatan)</span>&nbsp;</td>
+          <td>­ – odjazd <span class="turkus_color">11.40</span></td> 
+          </tr>
+          <tr>
+          <td style="text-align: right">Przystanek <span class="turkus_color">Jeżów, Pisarskiego 7</span>&nbsp;</td>
+          <td>­ – odjazd <span class="turkus_color">12.20</span></td> 
+          </tr>
+          </table>
+          </h3>
           
-          <h2>Przystanek Łódź, Legionów 76 ­- odjazd 10:50</h2>
-          <h2>Przystanek Koluszki, Głowackiego (Lewiatan) ­- odjazd 11.40</h2>
-          <h2>Przystanek Jeżów, Pisarskiego 7 – odjazd 12.20</h2>
-          
-          <h2>Gości przyjeżdżających własnymi samochodami prosimy o przyjazd
-          <br/>do Jeżowa na godzinę 12:10 i zaparkowanie samochodów 
+          <h3>Gości przyjeżdżających własnymi samochodami prosimy o przyjazd
+          <br/>do Jeżowa na godzinę <span class="turkus_color">12:10</span> i zaparkowanie samochodów 
           <br/>na ulicy Pisarskiego lub w alejkach (parking na terenie 
-          <br/>posesji nie będzie możliwy ze względu na potrzeby cateringu).</h2>
+          <br/>posesji nie będzie możliwy ze względu na potrzeby cateringu).</h3>
 
-          <h2>Autokar zawiezie wszystkich do Arboretum w Rogowie,
-          <br/>gdzie odbędzie się ceremonia ślubna.</h2>
-          <h3>Szczegóły w zakładce ŚLUB.</h3>
-          <h2>Po ceremonii prosimy o powrót na godzinę 14 do autokaru,
+          <h3>Autokar zawiezie wszystkich do <span class="turkus_color">Arboretum w Rogowie</span>,
+          <br/>gdzie odbędzie się ceremonia ślubna.</h3>
+          <h3>Szczegóły w <a href="#rogow3" class="turkus_color">informacjach o ślubie</a>.</h3>
+          <h3>Po ceremonii prosimy o powrót na godzinę <span class="turkus_color">14:00</span> do autokaru,
           <br/>który zawiezie nas na stację kolejki. W drodze powrotnej
           <br/>wysiadamy w Jeżowie, gdzie będzie czekał autokar
-          <br/>i zawiezie nas na przyjęcie weselne.</h2>
-          <h2>Godzina powrotu autokaru (trasa Jeżów­ - Koluszki - ­Łódź)
-          <br/>będzie uzależniona od woli gości.</h2>
+          <br/>i zawiezie nas na przyjęcie weselne.</h3>
+          <h3>Godzina powrotu autokaru (trasa Jeżów­ - Koluszki - ­Łódź)
+          <br/>będzie uzależniona od woli gości.</h3>
           <br/>
         </div>
       </section>
@@ -285,34 +301,41 @@
                     var left = $(document).scrollLeft();
                     var slub_left = $('#slub').offset().left - $('#slub').width();
                     var rogow_left = $('#rogow').offset().left - $('#rogow').width();
+                    var rogow3_left = $('#rogow3').offset().left - $('#rogow3').width();
                     var wesele_left = $('#wesele').offset().left - $('#wesele').width();
+                    var wesele2_left = $('#wesele2').offset().left - $('#wesele2').width();
                     var przyjecie_left = $('#przyjecie').offset().left - $('#przyjecie').width();
-                    var goscie_left = $('#goscie').offset().left - $('#goscie').width();
+                    // var goscie_left = $('#goscie').offset().left - $('#goscie').width();
                     
                     if (left > -100 && left < rogow_left) {
                       $('#img-1').prop('checked',true);
                     } else {
                       $('#img-1').prop('checked',false);
                     } 
-                    if (left > rogow_left && left < wesele_left) {
+                    if (left > rogow_left && left < rogow3_left) {
                       $('#img-2').prop('checked',true);
                     } else {
                       $('#img-2').prop('checked',false);
                     } 
-                    if (left > wesele_left && left < przyjecie_left) {
+                    if (left > rogow3_left && left < wesele_left) {
                       $('#img-3').prop('checked',true);
                     } else {
                       $('#img-3').prop('checked',false);
                     } 
-                    if (left > przyjecie_left && left < goscie_left) {
+                    if (left > wesele_left && left < wesele2_left) {
                       $('#img-4').prop('checked',true);
                     } else {
                       $('#img-4').prop('checked',false);
                     } 
-                    if (left > goscie_left) {
+                    if (left > wesele2_left && left < przyjecie_left) {
                       $('#img-5').prop('checked',true);
                     } else {
                       $('#img-5').prop('checked',false);
+                    } 
+                    if (left > przyjecie_left) {
+                      $('#img-6').prop('checked',true);
+                    } else {
+                      $('#img-6').prop('checked',false);
                     } 
 
                 });
