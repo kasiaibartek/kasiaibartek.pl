@@ -82,6 +82,10 @@
             </h4>
           </div>
         </div>
+      </section>
+      <div class="spacer s_viewport img11" id="rogow_before"></div>
+      <section id="titlechart" class="white spacer s70">
+        <img class="logotyp img11" src="img/logotyp_inverted.png"/>
         <div id="rogow2">
           <div id="description" class="scrollContainer" style="left: 55%; height: 85%; width: 70%; border: 0px;">
             <h3>Serdecznie prosimy o wcześniejsze przybycie (ok. 15 minut),
@@ -107,13 +111,42 @@
           </div>
         </div>
       </section>
-      <div class="spacer s_viewport img2"></div>
+      <div class="spacer s_viewport img5"></div>
       <section id="titlechart" class="white spacer s70">
-        <img class="logotyp img2" src="img/logotyp_inverted.png"/>
+        <img class="logotyp img5" src="img/logotyp_inverted.png"/>
         <div id="description">
           <h1 id="wesele">Przyjęcie weselne dla rodziny</h1>
           <h2 class="turkus_color">odbędzie się w Jeżowie przy ulicy Pisarskiego 7</h2>
-          <iframe width="500" height="350" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=Arboretum%2C%20Akademicka%2C%20Rog%C3%B3w%2C%20Poland&destination=Pisarskiego%207%2C%20Je%C5%BC%C3%B3w%2C%20Poland&key=AIzaSyAwnjpoMmJ5rOIEup29U3KSZTh5tJWpJfw"></iframe>
+          <br/>
+          <iframe width="500" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/directions?origin=Arboretum%2C%20Akademicka%2C%20Rog%C3%B3w%2C%20Poland&destination=Pisarskiego%207%2C%20Je%C5%BC%C3%B3w%2C%20Poland&key=AIzaSyAwnjpoMmJ5rOIEup29U3KSZTh5tJWpJfw"></iframe>
+          <br/>
+          <h2>Przypominamy, że przyjęcie odbędzie się w ogrodzie.<br/>Zachęcamy Panie do zabrania szali.<br/>Czeka na nas parkiet taneczny, więc<br/>w tej części imprezy możliwe już będą obcasy :)</h2>
+        </div>
+      </section>
+      <div class="spacer s_viewport img2"></div>
+      <section id="titlechart" class="white spacer s70">
+        <img class="logotyp img2" src="img/logotyp_inverted.png"/>
+        <div id="description" class="scrollContainer" style="left: 55%; height: 85%; width: 70%; border: 0px;">
+          <h2>Gościom weselnym proponujemy transport autokarem.</h2>
+          
+          <h2>Przystanek Łódź, Legionów 76 ­- odjazd 10:50</h2>
+          <h2>Przystanek Koluszki, Głowackiego (Lewiatan) ­- odjazd 11.40</h2>
+          <h2>Przystanek Jeżów, Pisarskiego 7 – odjazd 12.20</h2>
+          
+          <h2>Gości przyjeżdżających własnymi samochodami prosimy o przyjazd
+          <br/>do Jeżowa na godzinę 12:10 i zaparkowanie samochodów 
+          <br/>na ulicy Pisarskiego lub w alejkach (parking na terenie 
+          <br/>posesji nie będzie możliwy ze względu na potrzeby cateringu).</h2>
+
+          <h2>Autokar zawiezie wszystkich do Arboretum w Rogowie,
+          <br/>gdzie odbędzie się ceremonia ślubna.</h2>
+          <h3>Szczegóły w zakładce ŚLUB.</h3>
+          <h2>Po ceremonii prosimy o powrót na godzinę 14 do autokaru,
+          <br/>który zawiezie nas na stację kolejki. W drodze powrotnej
+          <br/>wysiadamy w Jeżowie, gdzie będzie czekał autokar
+          <br/>i zawiezie nas na przyjęcie weselne.</h2>
+          <h2>Godzina powrotu autokaru (trasa Jeżów­ - Koluszki - ­Łódź)
+          <br/>będzie uzależniona od woli gości.</h2>
           <br/>
         </div>
       </section>
@@ -127,7 +160,7 @@
           <br/>
         </div>
       </section>
-      <div class="spacer s_viewport img5"></div>
+      <!-- <div class="spacer s_viewport img5"></div>
       <section id="titlechart" class="white spacer s70">
         <img class="logotyp img5" src="img/logotyp_inverted.png"/>
         <div id="description">
@@ -158,7 +191,7 @@
            <p class="guest">bardzo fajny gość 22</p>
          </div>
        </div>
-     </section>
+     </section> -->
      <div class="spacer s_viewport img4"></div>
      <script type="text/javascript" src="js/ScrollToPlugin.min.js"></script>
      <script type="text/javascript" src="js/EasePack.min.js"></script>
@@ -168,15 +201,6 @@
         var controller = new ScrollMagic({vertical: false});
 
             var slubw = $(window).width();
-
-            var tween = TweenMax.fromTo("#rogow1", 1.0, {alpha: 1.0}, {alpha: 0.0});        
-            var scene = new ScrollScene({triggerElement: "#rogow_before", duration: 200, offset: slubw / 3.0 + 20})
-            .setTween(tween)
-            .addTo(controller);
-            var tween = TweenMax.fromTo("#rogow2", 1.0, {alpha: 0.0}, {alpha: 1.0});        
-            var scene = new ScrollScene({triggerElement: "#rogow_before", duration: 200, offset: slubw / 3.0 + 20})
-            .setTween(tween)
-            .addTo(controller);
 
             $(document).on("click", "#left_arrow", function (e) {
               // var left = $(document).scrollLeft() - 50;
